@@ -1,0 +1,166 @@
+
+body{
+    background-color: #2b2a2f;
+}
+
+/* стили для меню */
+
+.header{
+    display: flex;
+    width: 77%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+
+
+.header a{
+    width: 200px;
+    height: 49px;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fe7e11;
+    margin-top: 50px;
+    padding-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 73%;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 50px;
+    padding-top: 8px;
+    margin-left: 45px;
+    padding: 0;
+    align-items: center;
+}
+
+.header li{
+    padding: 12px;
+}
+
+.header li a{
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header .menu-select {
+    color: #fe7e11;
+}
+
+.header li a:hover{
+    color: #fe7e11;
+}
+
+.logo a{
+    text-align: start;
+}
+
+
+/* стили для слайдера */
+.slider{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .hi{
+    width: 54px;
+    height: 18px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.slider h1{
+    width: 504px;
+    height: 49px;
+    font-family: Montserrat;
+    font-size: 21.2px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fe7e11;
+}
+
+.slider .subtitle{
+    width: 290px;
+    height: 59px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d1d1d1;
+}
+
+.slider a{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.slider .subtitle-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: #fe7e11;
+    border-radius: 29px;
+    -webkit-border-radius: 29px;
+    -moz-border-radius: 29px;
+    -ms-border-radius: 29px;
+    -o-border-radius: 29px;
+    cursor: pointer;
+}
+
+.slider .slider-img{
+    width: 270px;
+    height: 270px;
+    background-color: #ffffff;
+}
+
+/* стили для секции обо мне */
