@@ -519,6 +519,77 @@ body {
     padding: 110px 0 110px 0;
 }
 
+/* стили портфолио */
+
+.porfolio{
+    margin-top: 110px;
+    background-color: #2b2a2f;
+}
+
+.portfolio-block{
+    background-color: #fffefe;
+    opacity: 0.5;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    cursor: pointer;
+}
+
+.portfolio-block p{
+    opacity: 0;
+}
+
+.portfolio-block:hover p{
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.portfolio-block:hover{
+    border: solid 2px #fe7e11;
+    filter: brightness(40%);
+    -webkit-filter: brightness(40%);
+    transition-duration: 0.5s;
+}
+
+.portfolio-section{
+    max-width: 1170px;
+    padding-top: 160px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "block1 block1 block1 block2"
+                         "block1 block1 block1 block3"
+                         "block4 block5 block6 block6";
+    grid-template-rows: repeat(3, 270px);
+    grid-template-columns: repeat(4, 270px);
+    gap: 30px;
+}
+
+.block1{
+    grid-area: block1;
+}
+
+.block2{
+    grid-area: block2;
+}
+
+.block3{
+    grid-area: block3;
+}
+
+.block4{
+    grid-area: block4;
+}
+
+.block5{
+    grid-area: block5;
+}
+
+.block6{
+    grid-area: block6;
+}
+
 /* стили футера */
 .address-footer{
     margin-top: 100px;
