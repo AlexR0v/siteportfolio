@@ -1,18 +1,17 @@
-
-body{
+body {
     background-color: #2b2a2f;
 }
 
 /* стили для меню */
 
-.header{
+.header {
     display: flex;
-    width: 77%;
+    width: 940px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -20,7 +19,7 @@ body{
 
 
 
-.header a{
+.header a {
     width: 200px;
     height: 49px;
     font-family: Montserrat;
@@ -38,10 +37,10 @@ body{
     text-decoration: none;
 }
 
-.header ul{
+.header ul {
     display: flex;
     flex-wrap: wrap;
-    width: 73%;
+    width: 690px;
     justify-content: space-between;
     list-style: none;
     margin-top: 50px;
@@ -51,11 +50,11 @@ body{
     align-items: center;
 }
 
-.header li{
+.header li {
     padding: 12px;
 }
 
-.header li a{
+.header li a {
     font-family: Montserrat;
     font-size: 14px;
     line-height: 6px;
@@ -69,25 +68,26 @@ body{
     color: #fe7e11;
 }
 
-.header li a:hover{
+.header li a:hover {
     color: #fe7e11;
 }
 
-.logo a{
+.logo a {
     text-align: start;
 }
 
 
 /* стили для слайдера */
-.slider{
-    width: 60%;
+.slider {
+    width: 800px;
     margin: 0 auto;
     margin-top: 150px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
-.slider .hi{
+.slider .hi {
     width: 54px;
     height: 18px;
     font-family: Montserrat;
@@ -101,7 +101,7 @@ body{
     color: #ffffff;
 }
 
-.slider h1{
+.slider h1 {
     width: 504px;
     height: 49px;
     font-family: Montserrat;
@@ -115,7 +115,7 @@ body{
     color: #fe7e11;
 }
 
-.slider .subtitle{
+.slider .subtitle {
     width: 290px;
     height: 59px;
     font-family: Montserrat;
@@ -129,7 +129,7 @@ body{
     color: #d1d1d1;
 }
 
-.slider a{
+.slider a {
     font-family: Montserrat;
     font-size: 16px;
     font-weight: bold;
@@ -142,7 +142,7 @@ body{
     text-decoration: none;
 }
 
-.slider .subtitle-btn{
+.slider .subtitle-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,12 +155,232 @@ body{
     -ms-border-radius: 29px;
     -o-border-radius: 29px;
     cursor: pointer;
+    margin-top: 43px;
 }
 
-.slider .slider-img{
+.slider .slider-img {
     width: 270px;
     height: 270px;
     background-color: #ffffff;
 }
 
+main {
+    margin: 0 auto;
+}
+
 /* стили для секции обо мне */
+.section {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 35px;
+    padding-bottom: 70px;
+    background-color: #27262b;
+    padding-top: 50px;
+}
+
+.about {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.about-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.about-title .line1 {
+    width: 130px;
+    height: 2px;
+    background-color: #fe7e11;
+    margin: 0 auto;
+    margin-top: 7px;
+}
+
+.about-title .line1::before {
+    content: " ";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: solid 1px #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: -6px;
+    margin-left: -13px;
+}
+
+.about-title .line1::after {
+    content: " ";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: solid 1px #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: -14px;
+    margin-left: 128px;
+}
+
+.about-title .line2 {
+    width: 110px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 12px;
+}
+
+.about-title h2 {
+    font-family: Montserrat;
+    font-size: 27px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+
+}
+
+.about-section {
+    margin-top: 120px;
+    display: flex;
+}
+
+.about-border {
+    width: 270px;
+    height: 320px;
+    border-left: solid 6px #fe7e11;
+    border-bottom: solid 6px #fe7e11;
+    position: relative;
+}
+
+.about-img {
+    width: 201px;
+    height: 264px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 39px;
+    top: 23px;
+}
+
+.about-right {
+    margin-left: 30px;
+}
+
+.about-right h3 {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #e2e2e2;
+    margin-top: 0;
+}
+
+.about-right p {
+    font-family: Montserrat;
+    font-size: 11.5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #d1d1d1;
+}
+
+/* стили блока компетенций */
+
+
+.service {
+    width: 100%;
+    padding-bottom: 70px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-section {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.service-block {
+    width: 220px;
+    min-height: 158px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #27262b;
+    margin-bottom: 45px;
+}
+
+.block-title {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #d1d1d1;
+}
+
+.block-text {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #d1d1d1;
+    padding: 10px;
+}
+
+.block-img {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.service-block:hover .block-img {
+    background-color: #fe7e11;
+}
+
+.service-block:hover svg {
+    fill: #ffffff;
+    stroke: #ffffff;
+}
+
+.service-block:hover {
+    box-shadow: 0px 5px 5px 0 rgba(164, 164, 164, 0.75);
+}
+
+.block-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
