@@ -522,32 +522,25 @@ body {
 /* стили портфолио */
 
 .porfolio{
-    margin-top: 110px;
+    padding: 110px 0 110px 0;
     background-color: #2b2a2f;
 }
 
 .portfolio-block{
     background-color: #fffefe;
-    opacity: 0.5;
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
     cursor: pointer;
+
 }
 
-.portfolio-block p{
-    opacity: 0;
+.portfolio-block img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
-.portfolio-block:hover p{
-    opacity: 1;
-    transition-duration: 1s;
-}
+
 
 .portfolio-block:hover{
-    border: solid 2px #fe7e11;
     filter: brightness(40%);
     -webkit-filter: brightness(40%);
     transition-duration: 0.5s;
@@ -568,10 +561,15 @@ body {
 
 .block1{
     grid-area: block1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .block2{
     grid-area: block2;
+
 }
 
 .block3{
@@ -716,4 +714,108 @@ hr{
 .icons:hover svg{
     fill: #fe7e11;
     stroke: #fe7e11
+}
+
+/* стили для отзывов */
+
+.testimonials{
+    padding: 110px 0 40px 0;
+    background-image: url('../img/background.webp');
+    background-position: top center;
+    background-repeat: repeat;
+}
+
+.testimonials-slider{
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 110px;
+}
+
+.your-class{
+    max-width: 1170px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.your-class p{
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #d1d1d1;
+}
+
+.testimonial-link{
+    display: block;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d1d1d1;
+    margin: 100px 0 0 10px;
+}
+
+.slick-slider{
+    padding-bottom: 50px;
+}
+
+.slick-prev{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 100%;
+    left: 47%;
+    background-image: url('../img/multimedia-option (1).svg');
+    cursor: pointer;
+}
+
+
+.slick-next{
+    position: absolute;
+    left: 53%;
+    top: 100%;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    background-image: url('../img/left-and-right-arrows (1).svg');
+    cursor: pointer;
+}
+
+
+.slick-dots{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+}
+
+.slick-dots button{
+    width: 10px;
+    height: 10px;
+    margin-left: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+    background-color: #fffefe;
+    opacity: 0.3;
+    font-size: 0;
+}
+
+.slick-active button{
+    background-color: #fe7e11;
 }
