@@ -469,6 +469,17 @@ body {
     align-items: center;
 }
 
+.love{
+    animation-name: heartbeat;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.love:hover{
+    animation-play-state: paused;
+}
+
 .achive-title{
     font-family: Montserrat;
     font-size: 36px;
@@ -586,6 +597,135 @@ body {
 
 .block6{
     grid-area: block6;
+}
+
+.portfolio-block2{
+    background-color: #fffefe;
+    cursor: pointer;
+
+}
+
+.portfolio-block2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+
+
+.portfolio-block2:hover{
+    filter: brightness(40%);
+    -webkit-filter: brightness(40%);
+    transition-duration: 0.5s;
+}
+
+.portfolio-section2{
+    max-width: 1170px;
+    padding-top: 160px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "block1-2 block1-2 block2-2 block2-2"
+                         "block1-2 block1-2 block2-2 block2-2"
+                         "block3-2 block4-2 block4-2 block5-2";
+    grid-template-rows: repeat(3, 270px);
+    grid-template-columns: repeat(4, 270px);
+    gap: 30px;
+}
+
+.block1-2{
+    grid-area: block1-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.block2-2{
+    grid-area: block2-2;
+
+}
+
+.block3-2{
+    grid-area: block3-2;
+}
+
+.block4-2{
+    grid-area: block4-2;
+}
+
+.block5-2{
+    grid-area: block5-2;
+}
+
+.portfolio-slider{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.slider-portfolio-class{
+    max-width: 1170px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.slick-prev1{
+    border: none;
+    position: absolute;
+    top: 6%;
+    left: 33%;
+    z-index: 5;
+    width: 150px;
+    height: 50px;
+    background-color: #fe7e11;
+    border-radius: 29px;
+    -webkit-border-radius: 29px;
+    -moz-border-radius: 29px;
+    -ms-border-radius: 29px;
+    -o-border-radius: 29px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 23px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #d1d1d1;
+}
+
+.slick-prev1:focus{
+    outline-color: #fe7e11;
+}
+
+.slick-next1{
+    position: absolute;
+    left: 53%;
+    top: 6%;
+    width: 150px;
+    height: 50px;
+    background-color: #fe7e11;
+    border-radius: 29px;
+    -webkit-border-radius: 29px;
+    -moz-border-radius: 29px;
+    -ms-border-radius: 29px;
+    -o-border-radius: 29px;
+    cursor: pointer;
+    border: none;
+    font-family: Montserrat;
+    font-size: 23px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #d1d1d1;
+}
+
+.slick-next1:focus{
+    outline-color: #fe7e11;
 }
 
 /* стили футера */
@@ -780,6 +920,10 @@ hr{
     cursor: pointer;
 }
 
+.slick-prev:focus{
+    outline-color: #fe7e11;
+}
+
 
 .slick-next{
     position: absolute;
@@ -792,6 +936,11 @@ hr{
     background-image: url('../img/left-and-right-arrows (1).svg');
     cursor: pointer;
 }
+
+.slick-next:focus{
+    outline-color: #fe7e11;
+}
+
 
 
 .slick-dots{
@@ -818,4 +967,13 @@ hr{
 
 .slick-active button{
     background-color: #fe7e11;
+}
+
+.pageup{
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    bottom: 40px;
+    right: 40px;
+    opacity: 0.5;
 }
