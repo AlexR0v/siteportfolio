@@ -777,10 +777,11 @@ body {
 }
 
 .right-block input[type="text"], input[type="email"]{
-    width: 370px;
+    width: 358px;
     height: 50px;
     border: solid 1px #413f3f;
     background-color: #413f3f;
+    padding-left: 10px;
 }
 
 .right-block input[type="text"]{
@@ -790,9 +791,10 @@ body {
 
 .right-block textarea{
     height: 251px;
-    width: 770px;
+    width: 762px;
     border: solid 1px #413f3f;
     background-color: #413f3f;
+    padding: 10px 0 0 10px
 }
 .right-block .btn{
     width: 220px;
