@@ -25,7 +25,7 @@ $(document).ready(function(){
 });
 
 $(function(){
-    $("a[href^='#']").click(function(){
+    $("a[href='#header']").click(function(){
             var _href = $(this).attr("href");
             $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
             return false;
@@ -38,6 +38,39 @@ $(window).scroll(function(){
     } else {
         $('.pageup').fadeOut();
     }
-
     
 });
+
+// $('form').submit(function(e) {
+//     e.preventDefault();
+//     $.ajax({
+//         type: "POST",
+//         url: "mailer/smart.php",
+//         data: $(this).serialize()
+//     }).done(function() {
+//         $(this).find("input").val("");
+//         $('#consultation, #order').fadeOut();
+//         $('.overlay, #thanks').fadeIn('slow');
+
+//         $('form').trigger('reset');
+//     });
+//     return false;
+// });
+
+// $(document).ready(function(){
+//     $('form').submit(function(evt){
+//         evt.preventDefault();
+//         $.ajax({
+//             type: "POST",
+//             url: "mailer/smart.php",
+//             data: $(this).serialize()
+//         }).done(function() {
+//             $(this).find("input").val("");
+
+
+//             $('form').trigger('reset');
+//         });
+//         return false;
+//     });
+
+// });
