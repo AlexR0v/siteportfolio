@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="slider-img fadeInRightBig wow" data-wow-duration="0.5s" data-wow-delay="0.5s" >
-                <img src="" alt="">
+                <img src="assets/img/ponomarev.webp" alt="Мое фото">
             </div>
         </div>
         <!-- слайдер конец -->
@@ -72,7 +72,7 @@
                     <div class="about-left">
                         <div class="about-border fadeInLeftBig wow" data-wow-duration="0.5s" data-wow-delay="0.7s">
                             <div class="about-img">
-                                <img src="" alt="">
+                                <img src="assets/img/programer.webp" alt="Изображение редактора кода, как я пишу код">
                             </div>
                         </div>
                     </div>
@@ -285,19 +285,19 @@
                     <div>
                         <div class="portfolio-section2">
                             <div class="portfolio-block2 block1-2">
-                                <a data-fancybox data-caption="Сайт с детской тематикой" href="assets/img/valykids-big.png"><img src="assets/img/Valykids.webp"></a>
+                                <a data-fancybox data-caption="Флаеры и раздаточные материалы" href="assets/img/flaer-big.webp"><img src="assets/img/flaer.webp"></a>
                             </div>
                             <div class="portfolio-block2 block2-2">
-                                    <img src="" alt="">
+                                <a data-fancybox data-caption="Каталоги продукции" href="assets/img/katalog.webp"><img src="assets/img/katalog.webp"></a>
                             </div>
                             <div class="portfolio-block2 block3-2">
-                                <img src="" alt="">
+                                <a data-fancybox data-caption="Рекламный плакат" href="assets/img/plakat-big (2).webp"><img src="assets/img/plakat-big.webp"></a>
                             </div>
                             <div class="portfolio-block2 block4-2">
-                                <img src="" alt="">
+                                <a data-fancybox data-caption="Вывеска студии загара" href="assets/img/malibu-big.webp"><img src="assets/img/malibu-smol.webp"></a>
                             </div>
                             <div class="portfolio-block2 block5-2">
-                                <img src="" alt="">
+                                <a data-fancybox data-caption="Этикетки" href="assets/img/scrab-big1.webp"><img src="assets/img/scrab-big2.webp"></a>
                             </div>
                         </div>
                     </div>
@@ -370,14 +370,21 @@
                     </div>
                 </div>
                 <div class="right-block">
-                    <form action="send.php" method="post">
+                    <form action="mail.php" method="POST" class="contacts-form">
                         <div class="input">
-                            <input type="text" name="first_name" placeholder="Ваше имя...">
-                            <input type="text" name="email" required placeholder="Введите ваш email..">
-                            <input type="text" name="phone" required placeholder="Ваш телефон...">
+                            <input name="name" type="text" placeholder="Ваше имя" required>
+                            <input name="email" type="email" placeholder="Ваш e-mail" required>
+                            <input name="phone" type="tel" placeholder="Ваш телефон" required>
                         </div>
-                        <textarea rows="10" name="message" cols="84" placeholder="Ваше сообщение..."></textarea>
-                        <input class="btn bounceInUp wow" data-wow-duration="1s" data-wow-delay="1.5s" type="submit" name="submit" value="Отправить">
+                        <textarea rows="10" cols="84" name="message" placeholder="Ваше сообщение:" required></textarea>
+                        <input class="btn bounceInUp wow" data-wow-duration="1s" data-wow-delay="1.5s" type="submit" name="submit" value="Отправить" onclick="if($('input:invalid').length==0 && $('textarea:invalid').length==0)
+                        {
+                            $.post('/contacts', $('.contacts-form').serialize(),
+                            function(data)
+                            {
+                                $('.contacts-form').html(data);
+                            });
+                        return false;}">
                     </form>
                     
                 </div>
