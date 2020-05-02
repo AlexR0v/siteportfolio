@@ -15,13 +15,13 @@ if(isset($_POST['submit'])){
     mail($to,$subject,$message,$headers);
    // mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender - Отключено!
     echo "Сообщение отправлено. Спасибо Вам " . $first_name . ", мы скоро свяжемся с Вами.";
-	echo "<br /><br /><a href='#'>Вернуться на сайт.</a>";
+	echo "<br /><br /><a href='https://alexr0v.github.io/siteportfolio/'>Вернуться на сайт.</a>";
 
 }
 
 ?>
 <!--Переадресация на главную страницу сайта, через 3 секунды-->
 <script language="JavaScript" type="text/javascript">
-function changeurl(){eval(self.location="http://webforall/");}
+function changeurl(){eval(self.location="https://alexr0v.github.io/siteportfolio/");}
 window.setTimeout("changeurl();",3000);
 </script>
