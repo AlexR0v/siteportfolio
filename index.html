@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="assets/css/animate.css">
 </head>
@@ -284,7 +285,7 @@
                     <div>
                         <div class="portfolio-section2">
                             <div class="portfolio-block2 block1-2">
-                                    <img src="" alt="">
+                                <a data-fancybox data-caption="Сайт с детской тематикой" href="assets/img/valykids-big.png"><img src="assets/img/Valykids.webp"></a>
                             </div>
                             <div class="portfolio-block2 block2-2">
                                     <img src="" alt="">
@@ -302,7 +303,8 @@
                     </div>
                 </div>
             </div>
-            
+
+
             
         </section>
         <!-- конец портфолио -->
@@ -330,9 +332,9 @@
                             Рекомендую! &raquo;</p></div>
                         <div><p>&laquo;Объемная работа выполнена быстро и качественно, спасибо. &raquo;</p></div>
                     </div>
+                    <a title="Откроется в новом окне" target="_blank" href="https://client.work-zilla.com/profile/reviews" class="testimonial-link">* все отзывы взяты от реальных клиентов</a>
                 </div>
             </div>
-            <a title="Откроется в новом окне" target="_blank" href="https://client.work-zilla.com/profile/reviews" class="testimonial-link">* все отзывы взяты от реальных клиентов</a>
         </section>
         <!-- конец секции отзывов -->
     </main>
@@ -369,9 +371,12 @@
                 </div>
                 <div class="right-block">
                     <form action="send.php" method="post">
-                        <input type="text" name="first_name" placeholder="Ваше имя...">
-                        <input type="text" name="email" required placeholder="Введите ваш email..">
-                        <textarea rows="5" name="message" cols="30" placeholder="Ваше сообщение..."></textarea>
+                        <div class="input">
+                            <input type="text" name="first_name" placeholder="Ваше имя...">
+                            <input type="text" name="email" required placeholder="Введите ваш email..">
+                            <input type="text" name="phone" required placeholder="Ваш телефон...">
+                        </div>
+                        <textarea rows="10" name="message" cols="84" placeholder="Ваше сообщение..."></textarea>
                         <input class="btn bounceInUp wow" data-wow-duration="1s" data-wow-delay="1.5s" type="submit" name="submit" value="Отправить">
                     </form>
                     
@@ -403,6 +408,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--Jqwery скрипт Обещаю от него избавиться когда пропишу все скрипты на JS-->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="assets/script/script.js"></script>
 <script src="assets/script/wow.min.js"></script>
 <script>
