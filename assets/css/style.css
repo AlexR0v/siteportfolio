@@ -387,6 +387,7 @@ body {
     .about-right {
         margin: 0 auto;
         margin-top: 50px;
+        padding-left: 30px;
     }
 }
 
@@ -419,6 +420,7 @@ body {
     letter-spacing: normal;
     text-align: justify;
     color: #d1d1d1;
+    width: 100%;
 }
 
 .address{
