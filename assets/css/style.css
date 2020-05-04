@@ -1194,6 +1194,8 @@ body {
     border: solid 1px #413f3f;
     background-color: #413f3f;
     padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
@@ -1208,9 +1210,6 @@ body {
     }
 }
 
-.right-block input[type="text"]{
-    margin-bottom: 30px;
-}
 
 .right-block textarea{
     height: 251px;
