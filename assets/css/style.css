@@ -1,7 +1,102 @@
-body {
+.body {
     background-color: #2b2a2f;
 }
 
+.body1 {
+    background-color: #86B3D1;
+}
+
+.vkl-vykl{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    top: 4%;
+}
+
+.change{
+    max-width: 100%;
+    height: 50px;
+    background-color: #fe7e11;
+    color: #fffefe;
+    font-size: 15px;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.2;
+    letter-spacing: normal;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.img-header{
+    position: relative;
+}
+
+.down{
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    bottom: -10%;
+    animation: down;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+}
+
+@keyframes down{
+    100% { transform:translateY(100%); -webkit-transform:translateY(100%); -moz-transform:translateY(100%); -ms-transform:translateY(100%); -o-transform:translateY(100%); }
+}
+
+.img-header:hover{
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    transition-duration: 2s;
+}
+
+.change1{
+    max-width: 100%;
+    height: 50px;
+    background-color: #555555;
+    color: #fffefe;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.2;
+    letter-spacing: normal;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.change1-show {
+    display: block;
+}
+
+.change-none {
+    display: none;
+}
 
 /* стили для меню */
 
@@ -37,9 +132,7 @@ body {
     justify-content: start;
 }
 
-
-
-.header a {
+.header-logo{
     font-family: Montserrat;
     font-size: 25px;
     font-weight: bold;
@@ -49,7 +142,6 @@ body {
     letter-spacing: normal;
     text-align: center;
     color: #fe7e11;
-    cursor: pointer;
     text-decoration: none;
 }
 
@@ -79,7 +171,7 @@ body {
     padding: 12px;
 }
 
-.header li a {
+.header-links {
     font-family: Montserrat;
     font-size: 14px;
     line-height: 6px;
@@ -88,6 +180,17 @@ body {
     color: #ffffff;
     text-decoration: none;
 }
+
+.header-links-light {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #17252A;
+    text-decoration: none;
+}
+
 
 .header .menu-select {
     color: #fe7e11;
@@ -141,7 +244,7 @@ body {
     }
 }
 
-.slider .hi {
+.hi {
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
@@ -154,6 +257,22 @@ body {
     padding: 0;
     margin: 0;
 }
+
+.hi1 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #17252A;
+    padding: 0;
+    margin: 0;
+}
+
+
 
 .slider h1 {
     font-family: Montserrat;
@@ -170,6 +289,7 @@ body {
     padding-top: 27px;
 }
 
+
 @media (max-width: 425px) and (min-width: 319px) {
     .slider h1 {
         text-align: center;
@@ -182,7 +302,7 @@ body {
     }
 }
 
-.slider .subtitle {
+.subtitle {
     width: 290px;
     height: 59px;
     font-family: Montserrat;
@@ -194,6 +314,21 @@ body {
     letter-spacing: normal;
     text-align: left;
     color: #d1d1d1;
+    padding-top: 30px;
+}
+
+.subtitle1 {
+    width: 290px;
+    height: 59px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #17252A;
     padding-top: 30px;
 }
 
@@ -230,6 +365,7 @@ body {
     -o-border-radius: 29px;
     cursor: pointer;
     margin-top: 60px;
+    box-shadow: -8px 9px 10px 0px rgba(50, 50, 50, 0.73);
 }
 
 .slider .slider-img {
@@ -245,12 +381,20 @@ body {
 }
 
 
-/* стили для секции обо мне */
+
 .section {
     padding-top: 110px;
     background-color: #27262b;
     padding-bottom: 110px;
 }
+
+.section-light {
+    padding-top: 110px;
+    background-image: url(../img/plaid.jpg);
+    padding-bottom: 110px;
+}
+
+
 
 @media (max-width: 375px) {
     .section {
@@ -278,7 +422,7 @@ body {
     margin-top: 7px;
 }
 
-.about-title .line1::before {
+.line1::before {
     content: " ";
     display: block;
     width: 12px;
@@ -293,7 +437,7 @@ body {
     margin-left: -13px;
 }
 
-.about-title .line1::after {
+.line1::after {
     content: " ";
     display: block;
     width: 12px;
@@ -308,7 +452,7 @@ body {
     margin-left: 128px;
 }
 
-.about-title .line2 {
+.line2 {
     width: 110px;
     height: 2px;
     background-color: #ffffff;
@@ -316,7 +460,15 @@ body {
     margin-top: 12px;
 }
 
-.about-title h2 {
+.line2-light {
+    width: 110px;
+    height: 2px;
+    background-color: #666666;
+    margin: 0 auto;
+    margin-top: 12px;
+}
+
+.about-title-dark {
     font-family: Montserrat;
     font-size: 27px;
     font-weight: bold;
@@ -326,6 +478,20 @@ body {
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
+    margin: 0;
+
+}
+
+.about-title-light {
+    font-family: Montserrat;
+    font-size: 27px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #17252A;
     margin: 0;
 
 }
@@ -386,6 +552,7 @@ body {
         margin: 0 auto;
         margin-top: 50px;
         padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -395,7 +562,7 @@ body {
     }
 }
 
-.about-right h3 {
+.about-right-dark {
     font-family: Montserrat;
     font-size: 15px;
     font-weight: 500;
@@ -408,7 +575,20 @@ body {
     margin-top: 0;
 }
 
-.about-right p {
+.about-right-light {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #17252A;
+    margin-top: 0;
+}
+
+.about-right-darkp1 {
     font-family: Montserrat;
     font-size: 11.5px;
     font-weight: normal;
@@ -421,6 +601,45 @@ body {
     width: 100%;
 }
 
+.about-right-darkp2 {
+    font-family: Montserrat;
+    font-size: 11.5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #d1d1d1;
+    width: 100%;
+}
+
+.about-right-darkp3 {
+    font-family: Montserrat;
+    font-size: 11.5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #d1d1d1;
+    width: 100%;
+}
+
+.about-right-p-light {
+    font-family: Montserrat;
+    font-size: 11.5px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #17252A;
+    width: 100%;
+}
+
 .address{
     display: flex;
     justify-content: space-between;
@@ -428,7 +647,7 @@ body {
     align-items: center;
 }
 
-.address ul{
+.addres-title{
     list-style: none;
     margin: 0;
     padding-left: 0;
@@ -441,6 +660,25 @@ body {
     letter-spacing: normal;
     text-align: left;
     color: #d1d1d1;
+}
+.addres-title2{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-family: Montserrat;
+    font-size: 11.5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.57;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d1d1d1;
+}
+
+.addres-title-light{
+    color: #17252A;
+    font-weight: 600;
 }
 
 @media (max-width: 1024px){
@@ -463,6 +701,7 @@ body {
     -ms-border-radius: 29px;
     -o-border-radius: 29px;
     cursor: pointer;
+    box-shadow: -8px 9px 10px 0px rgba(50, 50, 50, 0.73);
 }
 
 .address-btn a{
@@ -484,7 +723,7 @@ body {
 
 .service {
     width: 100%;
-    margin-top: 110px;
+    padding-top: 110px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -505,6 +744,10 @@ body {
     padding-bottom: 65px;
 }
 
+.service-section-light{
+    background-color: #464866;
+}
+
 .service-block {
     max-width: 370px;
     min-height: 158px;
@@ -512,6 +755,14 @@ body {
     cursor: pointer;
     background-color: #27262b;
     margin-bottom: 45px;
+}
+
+.service-block-light{
+    background-color: #99738E;
+}
+
+.service-block-light-hover{
+    box-shadow: 0px 5px 5px 0 rgba(164, 164, 164, 0.75);
 }
 
 @media (max-width: 1024px){
@@ -532,6 +783,10 @@ body {
     color: #d1d1d1;
 }
 
+.block-title-light{
+    color: #17252A;
+}
+
 .block-text {
     font-family: Montserrat;
     font-size: 10px;
@@ -543,6 +798,10 @@ body {
     text-align: center;
     color: #d1d1d1;
     padding: 10px;
+}
+
+.block-text-light{
+    color: #17252A;
 }
 
 .block-img {
@@ -557,6 +816,8 @@ body {
     margin: 0 auto;
     margin-top: 10px;
 }
+
+
 
 .service-block:hover .block-img {
     background-color: #fe7e11;
@@ -582,6 +843,10 @@ body {
 .achiev{
     padding: 110px 0 110px 0;
     background-color: #27262b;
+}
+
+.achiv-light{
+    background-color: #7E685A;
 }
 
 @media (max-width: 1024px){
@@ -706,6 +971,10 @@ body {
 .porfolio{
     padding: 110px 0 110px 0;
     background-color: #2b2a2f;
+}
+
+.porfolio-light {
+    background-image: url(../img/shattered-island.gif);
 }
 
 .portfolio-block{
@@ -1327,10 +1596,18 @@ hr{
     background-repeat: repeat;
 }
 
+.testimonials-light{
+    background-image: url(../img/dark-wood.jpg);
+}
+
 @media (max-width: 768px) and (min-width: 426px) {
     .testimonials {
         
     }
+}
+
+.footer-light{
+    background-color: #254E58;
 }
 
 .testimonials-slider{
