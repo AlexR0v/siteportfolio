@@ -9,6 +9,13 @@
 
 }
 
+@media (max-width: 425px) and (min-width: 319px) {
+    .icons {
+        width: 100%;
+        margin: 0 10px 0 10px;
+    }
+}
+
 .vkl-vykl{
     position: fixed;
     display: flex;
@@ -514,25 +521,30 @@
     }
 }
 
-@media (max-width: 425px) and (min-width: 319px) {
+@media (max-width: 768px) and (min-width: 319px) {
     .about-section {
         padding-left: 0;
         padding-right: 0;
         justify-content: center;
         align-items: center;
     }
+
+    .about-border, .down {
+        display: none;
+    }
 }
 
 .about-border {
-    width: 370px;
+    max-width: 370px;
     height: 420px;
     border-left: solid 6px #fe7e11;
     border-bottom: solid 6px #fe7e11;
     position: relative;
 }
 
+
 .about-img {
-    width: 232px;
+    max-width: 232px;
     height: 350px;
     background-color: #ffffff;
     position: absolute;
@@ -553,10 +565,11 @@
 
 @media (max-width: 425px) and (min-width: 319px) {
     .about-right {
+        max-width: 313px;
         margin: 0 auto;
         margin-top: 50px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
@@ -649,6 +662,7 @@
     justify-content: space-between;
     margin-top: 38px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .addres-title{
@@ -685,11 +699,6 @@
     font-weight: 600;
 }
 
-@media (max-width: 1024px){
-    .address ul{
-        padding-right: 20px;
-    }
-}
 
 
 .address-btn{
@@ -1035,6 +1044,12 @@
     
 }
 
+@media (max-width: 425px) and (min-width: 319px) {
+    .ani1, .ani-p1, .ani2 {
+        display: none;
+    }
+}
+
 .block2:hover .ani1{
     width: 100%;
     opacity: 0.9;
@@ -1119,7 +1134,7 @@
     gap: 30px;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) and (min-width: 467px) {
     .portfolio-section{
         grid-template-columns: repeat(4, 215px);
         padding-left: 50px;
@@ -1144,10 +1159,20 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 375px) and (min-width: 321px) {
+    .portfolio-section, .portfolio-section2 {
+        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: repeat(4, 87px);
+        gap: 5px;
+        padding-left: 10px;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 320px) {
     .portfolio-section {
         grid-template-rows: repeat(3, 90px);
-        grid-template-columns: repeat(4, 90px);
+        grid-template-columns: repeat(4, 78px);
         gap: 3px;
         padding-left: 0;
         padding-right: 0;
@@ -1254,10 +1279,22 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 375px) and (min-width: 321px) {
+    .portfolio-section2 {
+        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: repeat(4, 88px);
+        gap: 5px;
+        padding-left: 10px;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 320px) {
     .portfolio-section2 {
         grid-template-rows: repeat(3, 90px);
-        grid-template-columns: repeat(4, 90px);
+        grid-template-columns: repeat(4, 78px);
         gap: 3px;
         padding-left: 0;
         padding-right: 0;
@@ -1394,13 +1431,13 @@
 
 @media (max-width: 425px) and (min-width: 319px) {
     .slick-next1 {
-        left: 58%;
+        left: 50%;
     }
 }
 
 @media (max-width: 425px) and (min-width: 319px) {
     .slick-prev1 {
-        left: 11%;
+        left: 3%;
     }
 }
 
@@ -1500,13 +1537,19 @@
     max-width: 660px;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) and (min-width: 767px) {
     .right-block textarea{
         width: 428px;
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 425px) and (min-width: 319px) {
+    .right-block textarea {
+        width: 240px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
     .right-block textarea{
         width: 361px;
     }
@@ -1572,6 +1615,7 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .copi p{
@@ -1798,16 +1842,20 @@ hr{
 
 @media (max-width: 425px) and (min-width: 319px) {
     .laer-title1 {
-        font-size: 25px;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .laer-title2 {
-        font-size: 18px;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .laer1{
         left: 3%;
     }
     .blog-title {
-        left: 35%;
+        left: 30%;
 
     }
 }
@@ -1820,7 +1868,7 @@ hr{
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 767px) {
 
     .laer1 {
         left: 11%;
