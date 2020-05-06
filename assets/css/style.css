@@ -15,6 +15,7 @@
     flex-direction: column;
     margin-left: 10px;
     top: 4%;
+    z-index: 25;
 }
 
 .change{
@@ -1735,4 +1736,94 @@ hr{
     bottom: 40px;
     right: 40px;
     opacity: 0.5;
+}
+
+
+.blog{
+    min-height: 300px;
+    position: relative;
+    z-index: 22;
+}
+
+.blog-title{
+    position: absolute;
+    top: 5%;
+    left: 45%;
+
+}
+
+.blog-background{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    z-index: 23;
+}
+
+.laer-title1{
+
+    font-family: Montserrat;
+    font-size: 52px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #d1d1d1;
+
+}
+
+.laer-title2 {
+
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #d1d1d1;
+
+}
+
+.laer1{
+    max-width: 1000px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    z-index: 24;
+    height: 200px;
+}
+
+@media (max-width: 425px) and (min-width: 319px) {
+    .laer-title1 {
+        font-size: 25px;
+    }
+    .laer-title2 {
+        font-size: 18px;
+    }
+    .laer1{
+        left: 3%;
+    }
+    .blog-title {
+        left: 35%;
+
+    }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+
+    .laer1 {
+        left: 3%;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .laer1 {
+        left: 11%;
+    }
+
 }
